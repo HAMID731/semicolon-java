@@ -7,7 +7,7 @@ public static void main(String[]args){
 Scanner scan = new Scanner(System.in);
 
 System.out.println("Enter number");
-double highest = Double.MIN_VALUE;
+double smallest = Double.MIN_VALUE;
 double highest = Double.MAX_VALUE;
 
 while (true) {
