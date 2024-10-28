@@ -1,0 +1,145 @@
+import java.util.Scanner;
+
+public class Multiples_Five{
+
+public static void main(String[]args){
+
+Scanner scan = new Scanner(System.in);
+System.out.println("enter number");
+int number =scan.nextInt();
+
+int number0= number*0; 
+int number1= number*1;
+int number2= number*2;
+int number3= number*3;
+int number4= number*4;
+int number5= number*5;
+int number6= number*6;
+int number7= number*7;
+int number8= number*8;
+int number9= number*9;
+int number10= number*10;
+int number11= number*11;
+int number12= number*12;
+
+if(number==0){
+System.out.println("0 * 0 = "+number0);
+}
+else if(number==1){
+System.out.println("1 * 0 = "+number0);
+System.out.println("1 * 1 = "+number1);
+}
+else if (number==2){
+System.out.println("2 * 0 = "+number0);
+System.out.println("2 * 1 = "+number1);
+System.out.println("2 * 2 = "+number2);
+}
+else if (number==3){
+System.out.println("3 * 0 = "+number0);
+System.out.println("3 * 1 = "+number1);
+System.out.println("3 * 2 = "+number2);
+System.out.println("3 * 3 = "+number3);
+}
+else if (number==4){
+System.out.println("4 * 0 = "+number0);
+System.out.println("4 * 1 = "+number1);
+System.out.println("4 * 2 = "+number2);
+System.out.println("4 * 3 = "+number3);
+System.out.println("4 * 4 = "+number4);
+}
+else if (number==5){
+System.out.println("5 * 0 = "+number0);
+System.out.println("5 * 1 = "+number1);
+System.out.println("5 * 2 = "+number2);
+System.out.println("5 * 3 = "+number3);
+System.out.println("5 * 4 = "+number4);
+System.out.println("5 * 5 = "+number5);
+}
+else if (number==6){
+System.out.println("6 * 0 = "+number0);
+System.out.println("6 * 1 = "+number1);
+System.out.println("6 * 2 = "+number2);
+System.out.println("6 * 3 = "+number3);
+System.out.println("6 * 4 = "+number4);
+System.out.println("6 * 5 = "+number5);
+System.out.println("6 * 6 = "+number6);
+}
+else if (number==7){
+System.out.println("7 * 0 = "+number0);
+System.out.println("7 * 1 = "+number1);
+System.out.println("7 * 2 = "+number2);
+System.out.println("7 * 3 = "+number3);
+System.out.println("7 * 4 = "+number4);
+System.out.println("7 * 5 = "+number5);
+System.out.println("7 * 6 = "+number6);
+System.out.println("7 * 7 = "+number7);
+}
+else if (number==8){
+System.out.println("8 * 0 = "+number0);
+System.out.println("8 * 1 = "+number1);
+System.out.println("8 * 2 = "+number2);
+System.out.println("8 * 3 = "+number3);
+System.out.println("8 * 4 = "+number4);
+System.out.println("8 * 5 = "+number5);
+System.out.println("8 * 6 = "+number6);
+System.out.println("8 * 7 = "+number7);
+System.out.println("8 * 8 = "+number8);
+}
+else if (number==9){
+System.out.println("9 * 0 = "+number0);
+System.out.println("9 * 1 = "+number1);
+System.out.println("9 * 2 = "+number2);
+System.out.println("9 * 3 = "+number3);
+System.out.println("9 * 4 = "+number4);
+System.out.println("9 * 5 = "+number5);
+System.out.println("9 * 6 = "+number6);
+System.out.println("9 * 7 = "+number7);
+System.out.println("9 * 8 = "+number8);
+System.out.println("9 * 9 = "+number9);
+}
+else if (number==10){
+System.out.println("10 * 0 = "+number0);
+System.out.println("10 * 1 = "+number1);
+System.out.println("10 * 2 = "+number2);
+System.out.println("10 * 3 = "+number3);
+System.out.println("10 * 4 = "+number4);
+System.out.println("10 * 5 = "+number5);
+System.out.println("10 * 6 = "+number6);
+System.out.println("10 * 7 = "+number7);
+System.out.println("10 * 8 = "+number8);
+System.out.println("10 * 9 = "+number9);
+System.out.println("10 * 10 = "+number10);
+}
+else if (number==11){
+System.out.println("11 * 0 = "+number0);
+System.out.println("11 * 1 = "+number1);
+System.out.println("11 * 2 = "+number2);
+System.out.println("11 * 3 = "+number3);
+System.out.println("11 * 4 = "+number4);
+System.out.println("11 * 5 = "+number5);
+System.out.println("11 * 6 = "+number6);
+System.out.println("11 * 7 = "+number7);
+System.out.println("11 * 8 = "+number8);
+System.out.println("11 * 9 = "+number9);
+System.out.println("11 * 10 = "+number10);
+System.out.println("11 * 11 = "+number11);
+}
+else if (number==12){
+System.out.println("12 * 0 = "+number0);
+System.out.println("12 * 1 = "+number1);
+System.out.println("12 * 2 = "+number2);
+System.out.println("12 * 3 = "+number3);
+System.out.println("12 * 4 = "+number4);
+System.out.println("12 * 5 = "+number5);
+System.out.println("12 * 6 = "+number6);
+System.out.println("12 * 7 = "+number7);
+System.out.println("12 * 8 = "+number8);
+System.out.println("12 * 9 = "+number9);
+System.out.println("12 * 10 = "+number10);
+System.out.println("12 * 11 = "+number11);
+System.out.println("12 * 12 = "+number12);
+}
+else{
+System.out.println("out of bound");
+}
+}}

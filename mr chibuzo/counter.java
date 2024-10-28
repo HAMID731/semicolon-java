@@ -22,7 +22,7 @@ else if(number==0){
 zero++;
 }
 else{positive++;}
-
+}
 System.out.println("there are"+negative+"numbers");
 System.out.println("there are"+positive+"numbers");
 System.out.println("there are"+zero+"numbers");
