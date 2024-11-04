@@ -1,0 +1,11 @@
+result = 0
+
+print("Enter 1 for pass or 2 for fail.")
+
+while result != 1 and result != 2:
+    result = int(input("Enter result (1=pass, 2=fail): "))
+    
+    if result != 1 and result != 2:
+        print("Invalid input. Please enter 1 for pass or 2 for fail.")
+
+print("Thank you for entering a valid result.")
