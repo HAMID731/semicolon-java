@@ -7,6 +7,6 @@ public static void main(String[] args) {
             int n3 = n2 * i;
             int n4 = n3 * i;
             System.out.print(i + "   " + n2 + "   " + n3 + "   " + n4 + "\n");
-        }
-    }
+}
+}
 }
