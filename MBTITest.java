@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class MBTITest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
        
         System.out.print("What is your name? ");
         String name = scanner.nextLine();
@@ -27,10 +26,9 @@ public class MBTITest {
             "16. (J/P) preparation, plan ahead - go with the flow, adapt as you go",
             "17. (E/I) active, initiate - reflective, deliberate",
             "18. (S/N) facts, things, 'what is' - ideas, dreams, 'what could be', philosophical",
-            "19. (T/F) matter of fact, issue-oriented - sensitive, people-oriented, compassionate",
+            "19. (T/F) matter of fact, issue-oriented - sensitive, people-oriented, compassionate",      
             "20. (J/P) control, govern - latitude, freedom"
 };
-
 int eiA = 0, eiB = 0;
 int snA = 0, snB = 0;
 int tfA = 0, tfB = 0;
