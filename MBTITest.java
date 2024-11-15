@@ -65,6 +65,14 @@ else jpB++;
 }
 }
 }
+ String personalityType = "";
+        personalityType += (eiA >= eiB) ? "E" : "I";
+        personalityType += (snA >= snB) ? "S" : "N";
+        personalityType += (tfA >= tfB) ? "T" : "F";
+        personalityType += (jpA >= jpB) ? "J" : "P";
+
+        System.out.println("\n" + name + ", your MBTI personality type is: " + personalityType);
+
 System.out.println("E/I: A = " + eiA + ", B = " + eiB);
 System.out.println("S/N: A = " + snA + ", B = " + snB);
 System.out.println("T/F: A = " + tfA + ", B = " + tfB);
