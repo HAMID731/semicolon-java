@@ -1,0 +1,17 @@
+* Read integer n from user
+* Create an array arr of size n
+* i = 0
+* Do
+* Read an integer from user and store in arr[i]
+* Increment i by 1
+* While i < n
+* Read integer element from user
+* Set found to false
+* i = 0
+* Do
+* If arr[i] is equal to element
+* Set found to true
+* Exit loop
+* Increment i by 1
+* While i < n
+* Print found

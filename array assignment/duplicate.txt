@@ -1,0 +1,10 @@
+* Read integer n from user
+* Create array arr of size n
+* For i = 0 to n-1
+* Read arr[i] from user
+* Print "Duplicates: "
+* For i = 0 to n-1
+* For j = i + 1 to n-1
+* If arr[i] is equal to arr[j]
+* Print arr[i]
+* Break the loop

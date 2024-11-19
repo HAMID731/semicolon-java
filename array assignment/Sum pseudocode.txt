@@ -1,0 +1,7 @@
+* array arr = [1, 2, 3, 4, 5]  
+* integer sum = 0  
+
+*for each index i from 0 to LENGTH(arr) - 1  
+    ADD arr[i] to sum  
+
+*print "Sum of elements: " + sum  

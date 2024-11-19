@@ -1,0 +1,7 @@
+* declare array arr as 4, 2, 9, 1, 6  
+* declare integer min as first element of arr  
+* for each element in arr starting from second element  
+* if element is less than min then  
+* set min as element  
+* store result as min  
+* display "Minimum element is " followed by result  

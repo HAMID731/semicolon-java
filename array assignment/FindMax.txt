@@ -1,0 +1,7 @@
+* declare array arr as 1, 5, 2, 8, 3  
+* declare integer max as first element of arr  
+* for each element in arr starting from second element  
+* if element is greater than max then  
+* set max as element  
+* store result as max  
+* display "Maximum element: " followed by result  
