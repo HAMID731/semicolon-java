@@ -1,0 +1,17 @@
+1 set count array to size 51 for numbers 0 to 50
+2 print "Enter the integers between 1 and 50"
+3 repeat until input is 0:
+4 read num
+5 if num is between 1 and 50:
+6 increment count[num]
+7 end if
+8 end repeat
+9 for each i from 1 to 50:
+10 if count[i] is greater than 0:
+11 if count[i] is 1:
+12 print i + " occurs 1 time"
+13 else:
+14 print i + " occurs " + count[i] + " times"
+15 end if
+16 end if
+17 end for

@@ -1,0 +1,10 @@
+1 set arr to [10, 20, 30, 40]
+2 set element to 20
+3 set exists to false
+4 for each num in arr
+5 if num equals element
+6 set exists to true
+7 break the loop
+8 endif
+9 endfor
+10 print exists
