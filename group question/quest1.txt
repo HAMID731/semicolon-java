@@ -1,0 +1,7 @@
+ Write a program that takes 10 integers from the user and checks if they are up to the value (50) for them to go to the next stage and display a message stating that they have been promoted to the next stage
+
+
+pseudocode:
+*prompt user to enter 10 number
+*if number > 50 
+*print congratulations you have moved to the next stage

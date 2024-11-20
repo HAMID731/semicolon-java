@@ -1,0 +1,15 @@
+2) write an application that takes the age of 20 users and checks if they are up to the age (50) and put them in the category of matured, check if the users are up to (20) and put them in the category of teenagers  check if others are up to (10) and put them in the category of children, if some user are not up to the ages here display them out with a message them states their age. Display all categories of the entered users age.
+
+pseudocode:
+*prompt user to enter age of 20 users age
+*collect user age 
+*using a switch case if number is between 1-10
+*print(CHILD)
+*using a switch case if number is between 11-20
+*print(TEENAGER)
+*using a switch case if number is between 21-50
+*print(MATURE)
+*using a switch case if number is above 50 
+*print(give back the age of user)
+*using a switch case if user enter an invalid input
+*print(INVALID INPUT)

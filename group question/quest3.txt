@@ -1,0 +1,15 @@
+Write an application that uses a while loop to checks the grade of 30 students that sat for exams and took it in 5 subjects. calculate and display those that passed and failed and display them and their subject
+
+pseudocode:
+*PROMPT USER TO ENTER GRADE
+*COLLECT GRADE
+*STORE AS GRADE
+*WHILE GRADE <=30 
+*WHILE SUBJECT <=5
+*PROMPT USER TO ENTER SUBJECT
+*COLLECT
+*STORE AS SUBJECTONE
+*IF GRADE <50 
+*PRINT("FAIL")
+*IF GRADE >50
+*PRINT("PASS")
