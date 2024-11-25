@@ -1,0 +1,17 @@
+Pseudocode:
+
+*An array numbers is defined with the values {10, 20, 5, 8, 30}.
+
+*The method findLargest(numbers) is called with the numbers array as an argument. The result is stored in the variable largest.
+
+*The largest value is then printed to the console.
+
+*The method findLargest(int[] numbers) takes an integer array numbers as input and returns the largest number in the array.
+
+*The variable max is initialized to the first element of the array, numbers[0]. This is the starting point for comparison.
+
+*A for loop starts from index 1 (the second element of the array), and iterates through all the elements of the array.
+
+*Inside the loop, it checks if the current element numbers[i] is greater than the current value of max. If it is, the value of max is updated to numbers[i].
+
+*After the loop finishes, the largest value found is stored in max, which is then returned as the result of the method.

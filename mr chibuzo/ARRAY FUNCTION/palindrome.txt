@@ -1,0 +1,11 @@
+Pseudocode:
+
+*define a function that collect a string input (isPalindrome(String str))
+*create a variable called "left"
+*create a variable called "right"
+*left to the first character (position 0).
+*right to the last character (position length-1).
+*While left is less than right:
+*If the character at left is not equal to the character at right, return false (not a palindrome).
+*Otherwise, move left one step to the right and right one step to the left.
+*If the loop ends without returning false, return true (it's a palindrome).

@@ -1,0 +1,25 @@
+pseudocode:
+
+*Create an empty result list with a size equal to the total number of elements in both lists combined.
+
+*Initialize three counters: one for each list (starting at the beginning of each list) and one for the result list (starting at the beginning).
+
+*While there are more elements in either list:
+
+*If there are elements remaining in the first list:
+
+*Add the current element from the first list to the result list.
+
+*Move to the next element in the first list.
+
+*Move to the next position in the result list.
+
+*If there are elements remaining in the second list:
+
+*Add the current element from the second list to the result list.
+
+*Move to the next element in the second list.
+
+*Move to the next position in the result list.
+
+*Return the result list containing all the alternated elements.

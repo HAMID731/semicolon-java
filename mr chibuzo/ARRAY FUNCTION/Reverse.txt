@@ -1,0 +1,21 @@
+pseudocode:
+
+*An integer array numbers is initialized with the values {1, 2, 3, 4, 5}.
+
+*The reverseArray(numbers) method is called, passing the numbers array to it. The returned reversed array is stored in the reversed variable.
+
+*The reversed array is then printed element by element using a for-each loop.
+
+*The method reverseArray(int[] numbers) takes the input array numbers and returns a new array that is the reverse of the original.
+
+*A new array reversed is created with the same length as numbers to hold the reversed elements.
+
+*A for loop iterates over the numbers array.
+
+*For each element at index i in numbers, the corresponding element in reversed is assigned the value of numbers[numbers.length - 1 - i]. This 
+accesses the elements in reverse order:
+
+-When i = 0, reversed[0] = numbers[4] (the last element of numbers).
+-When i = 1, reversed[1] = numbers[3] (the second-to-last element), and so on.
+
+*After the loop finishes, the reversed array, now containing the elements in reverse order, is returned.

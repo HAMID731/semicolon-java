@@ -1,0 +1,23 @@
+pseudocode:
+
+Sum Using For Loop:
+
+*Start with a total set to zero.
+*For every number in the given list of numbers, add the number to the total.
+*Once all numbers are added, the total is the result.
+
+Sum Using While Loop:
+
+*Start with a total set to zero and an index pointing to the first number in the list.
+*While the index is less than the length of the list, keep adding the number at the current index to the total.
+*Move the index to the next position after each addition.
+*Stop when all numbers are added, and the total is the result.
+
+Sum Using Do-While Loop:
+
+*Start with a total set to zero and an index pointing to the first number in the list.
+*If the list has at least one number, start adding numbers in the following manner:
+*Add the number at the current index to the total.
+*Move the index to the next position.
+*Continue until the index is no longer valid (i.e., it goes beyond the last position).
+*The total after completing this process is the result.

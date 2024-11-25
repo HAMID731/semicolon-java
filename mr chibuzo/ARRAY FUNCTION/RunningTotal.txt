@@ -1,0 +1,7 @@
+pseudocode:
+
+*initializes an array numbers with values {1, 2, 3, 4}.
+*The method computeRunningTotal(int[] numbers) is called to calculate the running total of the numbers in the array.
+*It starts with a total variable initialized to 0.
+*Then, it iterates over each element in the array using a for-each loop.
+*For each element, it adds the value of the element to the running total (total), and after each addition, it prints the updated running total.

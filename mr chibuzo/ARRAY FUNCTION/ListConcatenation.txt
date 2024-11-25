@@ -1,0 +1,10 @@
+-pseudocode:
+
+*creates a new array result large enough to hold both input arrays list1 and list2.
+*The first loop copies all elements from list1 into result.
+*The second loop copies all elements from list2 into result starting after the last element of list1.
+*Finally, it returns the concatenated array.
+
+-main function:
+*Two arrays list1 and list2 are defined.
+*The concatenateLists function is called to concatenate the arrays, and the result is printed element by element.
