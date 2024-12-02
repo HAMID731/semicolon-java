@@ -28,14 +28,4 @@ public class MenstrualCycleApp {
 	public static int calculateOvulationDay(int lastPeriodDate, int cycleLength) {
 		return lastPeriodDate + cycleLength - 14;
 	}
-
-	public static int calculateFertileStart(int lastPeriodDate, int cycleLength) {
-		int ovulationDay = lastPeriodDate + cycleLength - 14;
-		return ovulationDay-5;
-	}
-
-	public static int calculateFertileEnd(int lastPeriodDate, int cycleLength) {
-		int ovulationDay = lastPeriodDate + cycleLength - 14;
-		return ovulationDay+1;
-	}
 }
