@@ -31,14 +31,11 @@ public static void main(String[]args){
 		System.out.print("----------------------------------------------------------------------------------------------\n");
 		System.out.print("----------------------------------------------------------------------------------------------\n");
 	for(int i= 0; i < list.size(); i++) { 
+			System.out.print("\t        "+"sub"+"\t"+list.get(i)+"\n");
 
 		for (int studentCall = 1; studentCall < numberOfStudent.length+1; studentCall++){
-
-			for (int subjectPrint = 1; subjectPrint < numberOfSubject.length+1; subjectPrint++){
-
 				System.out.print("\nstudent "+studentCall+"\t");
-				System.out.print("sub"+"\t"+list.get(i));
-			}
+							
 		}	
 	}
 
