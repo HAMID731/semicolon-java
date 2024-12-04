@@ -15,7 +15,7 @@ public static void main(String[]args){
 	System.out.print("\nsaved successfully ");
 	System.out.println();
 	ArrayList<Integer> list = new ArrayList<Integer>();
-	
+
 	for (int student = 1; student < numberOfStudent.length+1; student++){
 
 		for (int subjectOffer = 1; subjectOffer < numberOfSubject.length+1; subjectOffer++){
@@ -26,21 +26,25 @@ public static void main(String[]args){
 			list.add(score);
 			System.out.print("saving >>>>>>>>>>>>>>>> ");
 			System.out.print("\nsaved successfully \n");
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print("----------------------------------------------------------------------------------------------\n");
+			System.out.print("----------------------------------------------------------------------------------------------\n");
+			getSubject(subjectOffer);
+			System.out.print("----------------------------------------------------------------------------------------------\n");
+
 		}
-	}	
-		System.out.print("----------------------------------------------------------------------------------------------\n");
-		System.out.print("----------------------------------------------------------------------------------------------\n");
-	for(int i= 0; i < list.size(); i++) { 
-			System.out.print("\t        "+"sub"+"\t"+list.get(i)+"\n");
 
-		for (int studentCall = 1; studentCall < numberOfStudent.length+1; studentCall++){
-				System.out.print("\nstudent "+studentCall+"\t");
-							
-		}	
-	}
+		}
+		
+		}
 
-
-
+	
+}
+	public static void getSubject(int subject){
+		int[] numberOfSubject = new int[subject];
+		for (int subjectOffer = 1; subjectOffer < numberOfSubject.length+1; subjectOffer++){
+			System.out.print("sub"+subjectOffer+1);
+		}
 }
 	
 		
