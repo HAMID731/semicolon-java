@@ -7,6 +7,8 @@ public class StudentGradeBuilder {
         int students = scanner.nextInt();
         System.out.print("How many student do they offer: \n");
         int subjects = scanner.nextInt();
+	System.out.print("saving >>>>>>>>>>>>>>>> ");
+	System.out.print("\nsaved successfully \n");
 
         int[][] scores = new int[students][subjects];
 
@@ -17,6 +19,8 @@ public class StudentGradeBuilder {
                 do {
                     System.out.println("Enter score for subject " + (j + 1) + ":");
                     score = scanner.nextInt();
+		   System.out.print("saving >>>>>>>>>>>>>>>> ");
+		   System.out.print("\nsaved successfully \n");
                 } while (score < 0 || score > 100);
                 scores[i][j] = score;
             }
@@ -24,12 +28,15 @@ public class StudentGradeBuilder {
 
         System.out.println("\nClass Summary:");
         for (int i = 0; i < students; i++) {
-            System.out.print("Student " + (i + 1) + ": ");
             int total = 0;
             for (int j = 0; j < subjects; j++) {
                 total += scores[i][j];
             }
-            System.out.println("Total = " + total + ", Average = " + (total / subjects));
+	
+	     double average = total / subjects;
+	     System.out.print("----------------------------------------------------------------------------------------------\n");
+            System.out.println("\t\tTotal\t"+" Average\n "+ "Student" + (i + 1)+"\t"+ total +"  \t"+"   "+ average);
+	   System.out.print("----------------------------------------------------------------------------------------------\n");
         }
     }
 }
