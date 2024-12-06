@@ -44,12 +44,13 @@ public class StudentGradeBuilder {
         	System.out.printf("TOT\tAVE\n");
 		System.out.println("-------------------------------------------------------------------------------------------------------------\n");
 		for (int i = 0; i < students; i++) {
-			System.out.print("\nStudent" + (i + 1)+ "   ");
-			for (int j = 0; j < subjects; j++) {
-				System.out.print(scores[i][j]+"\t");
-			}
-			System.out.print(totals[i] +"\t "+ averages[i]);
+    			System.out.print("\nStudent" + (i + 1)+ " ");
+    			for (int j = 0; j < subjects; j++) {
+        			System.out.print(scores[i][j]+"\t");
+    			}
+    			System.out.printf("%.2f   %.2f", totals[i], averages[i]);
 		}
+
 		
 	}
 }

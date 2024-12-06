@@ -15,9 +15,17 @@ public class MenstrualCycleApp {
 		int fertileStart = calculateFertileStart(lastPeriodDate, cycleLength);
 		int fertileEnd = calculateFertileEnd(lastPeriodDate, cycleLength);
 
+		System.out.println("------------------------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------");
 		System.out.println("Predicted next period start date: Day " + nextPeriodStart);
+		System.out.println("------------------------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------");
 		System.out.println("Ovulation date: Day " + ovulationDay);
+		System.out.println("------------------------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------");
 		System.out.println("Fertile window: Day " + fertileStart + " to Day " + fertileEnd);
+		System.out.println("------------------------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------");
 
 	}
 
