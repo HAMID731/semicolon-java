@@ -70,6 +70,12 @@ public class SemicolonStore {
 
         double change = amountPaid - finalTotal;
         System.out.println("Amount Paid: " + amountPaid);
-        System.out.println("Change Given: " + change);
+
+        if(change == 0) {
+            System.out.println("You have no change.");
+        }
+        else{
+            System.out.println("change= "+ change);
+        }
     }
 }
