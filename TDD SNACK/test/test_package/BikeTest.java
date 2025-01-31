@@ -25,9 +25,8 @@ public class BikeTest {
         assertEquals(0, bike.getSpeed());
     }
     @Test
-    public void testBikeAcceleratesCorrectly() {
+    public void testBikeAcceleration(){
         Bike bike = new Bike();
-        bike.accelerate();
 
     }
 }

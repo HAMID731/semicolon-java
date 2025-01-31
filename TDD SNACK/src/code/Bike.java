@@ -3,6 +3,7 @@ package code;
 public class Bike {
     private boolean isOn;
     private int speed;
+    public String gearType;
 
     public void turnOn() {
         isOn = true;
@@ -15,36 +16,42 @@ public class Bike {
 
     public void accelerate() {
         if (isOn) {
-            if (speed >= 0 && speed <= 20) {
-                speed += 1;
-            }
-            else if (speed >= 21 && speed <= 30){
-                speed += 2;
-            }
-            else if (speed >= 31 && speed <= 40){
-                speed += 3;
-            }
-            else if (speed >= 41){
-                speed += 4;
+            switch (gearType) {
+                case "Gear 1":
+                    speed = speed + 1;
+                    break;
+                case "Gear 2":
+                    speed = speed + 2;
+                    break;
+                case "Gear 3":
+                    speed = speed + 3;
+                    break;
+                case "Gear 4":
+                    speed = speed + 4;
+                    break;
             }
         }
     }
-
     public void decelerate() {
         if (isOn) {
-           if (speed >= 0 && speed <= 20) {
-               speed -= 1;
-           }
-           else if (speed >= 21 && speed <= 30) {
-               speed -= 2;
-           }
-           else if (speed >= 31 && speed <= 40) {
-               speed -= 3;
-           }
-           else if (speed >= 41) {
-               speed -= 4;
-           }
+            switch (gearType) {
+                case "Gear 1":
+                    speed = speed - 1;
+                    break;
+                case "Gear 2":
+                    speed = speed - 2;
+                    break;
+                case "Gear 3":
+                    speed = speed - 3;
+                    break;
+                case "Gear 4":
+                    speed = speed - 4;
+                    break;
+                default:
+                    break;
+            }
         }
+
     }
 
     public boolean isOn() {
