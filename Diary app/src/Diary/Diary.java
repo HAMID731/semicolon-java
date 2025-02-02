@@ -1,21 +1,30 @@
 package Diary;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Diary  {
-    public String username;
-    private final String password;
-    public boolean isLocked;
-    private final ArrayList<Entry> entries;
+public class Diary {
+    private String username;
+    private String password;
+    private boolean isLocked;
+    private ArrayList<Entry> entries;
+    private Scanner scanner;
 
     public Diary(String username, String password) {
         this.username = username;
         this.password = password;
         this.isLocked = true;
         this.entries = new ArrayList<>();
+        this.scanner = new Scanner(System.in);
     }
 
-    public void get
+    public String getUsername() {
+        return this.username;
+    }
+
+    public String getPassword() {
+        return this.password;
+    }
 
     public boolean unlockDiary(String password) {
         if (password.equals(this.password)) {
@@ -33,19 +42,25 @@ public class Diary  {
         return isLocked;
     }
 
-    public boolean createEntry(String title, String content) {
+    public boolean createEntry() {
         if (!isLocked) {
+            System.out.println("Enter title");
+            String title = scanner.nextLine();
+            System.out.println("Enter content");
+            String content = scanner.nextLine();
             Entry entry = new Entry(entries.size() + 1, title, content);
             entries.add(entry);
+            System.out.println("Entry created successfully!");
             return true;
         } else {
+            System.out.println("Diary is locked. Please unlock to create entries.");
             return false;
         }
     }
 
     public String deleteEntry(int id) {
         entries.removeIf(entry -> entry.getId() == id);
-        return "Entry deleted";
+        return "Entry deleted successfully!";
     }
 
     public Entry findEntryById(int id) {
@@ -64,5 +79,4 @@ public class Diary  {
             entry.setContent(content);
         }
     }
-
 }

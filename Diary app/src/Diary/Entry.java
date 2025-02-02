@@ -1,6 +1,6 @@
 package Diary;
 
-class Entry {
+public class Entry {
     private int id;
     private String title;
     private String content;
@@ -15,8 +15,6 @@ class Entry {
         return id;
     }
 
-
-
     public void setTitle(String title) {
         this.title = title;
     }
@@ -27,5 +25,9 @@ class Entry {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getTitle() {
+        return title;
     }
 }
