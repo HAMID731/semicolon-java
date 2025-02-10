@@ -1,21 +1,22 @@
 package Bank;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Bank {
     Random rand = new Random();
-    private final Account[] accounts;
+    private final ArrayList<String> accounts;
     private int accountCount;
 
     public Bank() {
-        accounts = new Account[100];
-        accountCount = 0;
+        this.accounts = new ArrayList<>();
+        this.accountCount = 0;
     }
 
     public Account createAccount(String firstName, String lastName, String pin) {
         int accountNumber = generateAccountNumber();
         String accountId = firstName + " " + lastName + "-" + accountNumber;
         Account account = new Account(accountId, pin);
-        accounts[accountCount++] = account;
+        accounts.set(accountCount++, String.valueOf(account));
         return account;
     }
 
@@ -27,4 +28,3 @@ public class Bank {
 
 
 }
-

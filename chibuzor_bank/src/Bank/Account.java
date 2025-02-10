@@ -25,6 +25,10 @@ public class Account {
         }
     }
 
+    public void getPin(String pin) {
+        this.pin = pin;
+    }
+
     public boolean withdraw(String pin, double amount) {
         if (this.pin.equals(pin) && amount > 0 && amount <= balance) {
             balance -= amount;

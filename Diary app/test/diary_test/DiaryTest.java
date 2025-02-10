@@ -25,7 +25,7 @@ public class DiaryTest {
     @Test
 
     public void UnlockDiarySuccessfully(){
-        Diary diary = new Diary("HAMID","ww321");
+        Diary diary = new Diary("HAMID","ww321");z
         diary.lockDiary();
         assertTrue(diary.unlockDiary("ww321"));
     }

@@ -5,25 +5,71 @@ import java.util.Scanner;
 public class MainApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Diary diary = new Diary("HAMID", "ww321");
-        getMenu(scanner, diary);
+        getUserMenu(scanner);
     }
 
-    public static void getMenu(Scanner scanner, Diary diary) {
-        System.out.println("WELCOME TO HAMID'S DIARY APP");
-        System.out.println("1. Create Entry.");
-        System.out.println("2. Lock Diary.");
-        System.out.println("3. Unlock Diary.");
-        System.out.println("4. Find Entry By ID.");
-        System.out.println("5. Update Entry.");
-        System.out.println("6. Delete Entry.");
-        System.out.print("Please enter your choice >>>>>>>>>>> ");
+    public static void getUserMenu(Scanner scanner) {
+        System.out.println("""
+                WELCOME TO HAMID'S DIARY APP
+                1. Register.
+                2. Login.
+                please enter your choice >>>>>>>>>>>
+                """);
         int input = scanner.nextInt();
         scanner.nextLine();
 
         switch (input) {
             case 1:
-                diary.createEntry();
+                registerUser(scanner);
+                break;
+            case 2:
+                loginUser(scanner);
+                break;
+            default:
+                System.out.println("Invalid choice!");
+                getUserMenu(scanner);
+        }
+    }
+
+    public static void registerUser(Scanner scanner) {
+        System.out.println("Enter username");
+        String username = scanner.nextLine();
+        System.out.println("Enter password");
+        String password = scanner.nextLine();
+
+        Diary diary = new Diary(username, password);
+        System.out.println("User registered successfully!");
+        getMenu(scanner, diary);
+    }
+
+    public static void loginUser(Scanner scanner) {
+        System.out.println("Enter username");
+        String username = scanner.nextLine();
+        System.out.println("Enter password");
+        String password = scanner.nextLine();
+
+        Diary diary = new Diary(username, password);
+        System.out.println("User logged in successfully!");
+        getMenu(scanner, diary);
+    }
+
+    public static void getMenu(Scanner scanner, Diary diary) {
+        System.out.println("""
+                WELCOME TO HAMID'S DIARY APP
+                1. Create Entry.
+                2. Lock Diary.
+                3. Unlock Diary.
+                4. Find Entry By ID.
+                5. Update Entry.
+                6. Delete Entry.
+                please enter your choice >>>>>>>>>>>
+                """);
+        int input = scanner.nextInt();
+        scanner.nextLine();
+
+        switch (input) {
+            case 1:
+                diary.createEntry(scanner);
                 getMenu(scanner, diary);
                 break;
             case 2:
@@ -44,7 +90,7 @@ public class MainApplication {
             case 4:
                 System.out.println("Enter ID");
                 int id = scanner.nextInt();
-                scanner.nextLine(); // Consume newline left-over
+                scanner.nextLine();
                 Entry entry = diary.findEntryById(id);
                 if (entry != null) {
                     System.out.println("Title: " + entry.getTitle());
@@ -57,7 +103,7 @@ public class MainApplication {
             case 5:
                 System.out.println("Enter ID");
                 id = scanner.nextInt();
-                scanner.nextLine(); // Consume newline left-over
+                scanner.nextLine();
                 System.out.println("Enter new title");
                 String newTitle = scanner.nextLine();
                 System.out.println("Enter new content");
@@ -69,7 +115,7 @@ public class MainApplication {
             case 6:
                 System.out.println("Enter ID");
                 id = scanner.nextInt();
-                scanner.nextLine(); // Consume newline left-over
+                scanner.nextLine();
                 System.out.println(diary.deleteEntry(id));
                 getMenu(scanner, diary);
                 break;
