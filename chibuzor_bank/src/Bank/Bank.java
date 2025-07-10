@@ -20,11 +20,12 @@ public class Bank {
         return account;
     }
 
-    private int generateAccountNumber() {
+    int generateAccountNumber() {
         int accountNumber;
         accountNumber = rand.nextInt(100);
         return accountNumber;
     }
+
 
 
 }

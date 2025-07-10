@@ -1,4 +1,5 @@
 package code;
+import code.Enum;
 
 public class Bike {
     private boolean isOn;

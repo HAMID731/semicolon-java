@@ -41,7 +41,7 @@ public class MyArrayList {
         return false;
     }
     public void clear() {
-        elements = new int[10]; // Reset to initial capacity
+        elements = new int[10]; 
         size = 0;
     }
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Stories</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Recent Stories</h1>
+<ul th:if="${not #lists.isEmpty(stories)}">
+    <li th:each="story : ${stories}">
+        <h2 th:text="${story.title}"></h2>
+        <p th:text="${story.content}"></p>
+        <hr/>
+    </li>
+</ul>
+<p th:if="${#lists.isEmpty(stories)}">No stories have been published yet.</p>
+<p><a href="/create">Write a New Story</a></p>
+</body>
+</html>
